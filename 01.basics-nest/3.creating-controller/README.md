@@ -1,10 +1,21 @@
+
+## description
+```bash
+요청 응답 주기
+
+```
+
+<img width="947" alt="1-3-1" src="https://user-images.githubusercontent.com/13144137/205554403-fcf7cb48-18e5-41ee-a212-a50a8ef0f471.png">
+<img width="520" alt="1-3-2" src="https://user-images.githubusercontent.com/13144137/205554435-7d5e39b3-e0b0-421c-8a6f-f1df8a882fbf.png">
+<img width="485" alt="1-3-3" src="https://user-images.githubusercontent.com/13144137/205554444-785da46d-3334-43e8-ae2b-9622a3b2f090.png">
+<img width="638" alt="1-3-4" src="https://user-images.githubusercontent.com/13144137/205554452-fa3c9823-9592-4bb7-9967-9415b8063cd8.png">
+
+
 ## script
 ```bash
 
 
-So just about every server that you're ever going to put together is going to receive a request and
-
-then might do some validation on data contained inside that request.
+So just about every server that you're ever going to put together is going to receive a request and then might do some validation on data contained inside that request.
 
 So, for example, we might validate some body or some data in the body.
 
@@ -179,15 +190,4 @@ Leslie, want to mention is that these decorator's and things are really confusin
 Don't sweat it.
 
 As I mentioned, we're going to be going over decorator's a tremendous amount inside this course.
-```
-
-<img width="947" alt="1-3-1" src="https://user-images.githubusercontent.com/13144137/205554403-fcf7cb48-18e5-41ee-a212-a50a8ef0f471.png">
-<img width="520" alt="1-3-2" src="https://user-images.githubusercontent.com/13144137/205554435-7d5e39b3-e0b0-421c-8a6f-f1df8a882fbf.png">
-<img width="485" alt="1-3-3" src="https://user-images.githubusercontent.com/13144137/205554444-785da46d-3334-43e8-ae2b-9622a3b2f090.png">
-<img width="638" alt="1-3-4" src="https://user-images.githubusercontent.com/13144137/205554452-fa3c9823-9592-4bb7-9967-9415b8063cd8.png">
-
-## description
-```bash
-요청 응답 주기
-
 ```
