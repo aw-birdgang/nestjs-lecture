@@ -1,28 +1,6 @@
 ## script
 ```bash
-All right, onto steps number three and four, so in step three, we need to create a nest module and a controller.
 
-I want to very quickly tell you what a module in a controller are so we're can take a look at a couple of different diagrams.
-
-All right.
-
-So this diagram right here is probably going to look somewhat familiar if you've ever put together any kind of server.
-
-So in just about every HTP server you're ever going to create, you're going to have what is referred to as a request response cycle.
-
-Users are going to make requests to your server inside of your server, you're going to have some amount of code that's going to process that request.
-
-You might validate some data inside the request.
-
-You might handle the request differently depending upon what route it is addressed to.
-
-And then eventually you're going to formulate a response and send it back to ever made the request.
-
-Now, just about every server you ever put together, this code right here that's going to process that request is almost always going to look rather similar in nature.
-
-In other words, this kind of request response cycle almost always has the same steps inside of it, regardless of the language framework library or whatever else that you use to build your server.
-
-So this code or that process almost always looks something like this.
 
 So just about every server that you're ever going to put together is going to receive a request and
 
@@ -201,4 +179,15 @@ Leslie, want to mention is that these decorator's and things are really confusin
 Don't sweat it.
 
 As I mentioned, we're going to be going over decorator's a tremendous amount inside this course.
+```
+
+<img width="947" alt="1-3-1" src="https://user-images.githubusercontent.com/13144137/205554403-fcf7cb48-18e5-41ee-a212-a50a8ef0f471.png">
+<img width="520" alt="1-3-2" src="https://user-images.githubusercontent.com/13144137/205554435-7d5e39b3-e0b0-421c-8a6f-f1df8a882fbf.png">
+<img width="485" alt="1-3-3" src="https://user-images.githubusercontent.com/13144137/205554444-785da46d-3334-43e8-ae2b-9622a3b2f090.png">
+<img width="638" alt="1-3-4" src="https://user-images.githubusercontent.com/13144137/205554452-fa3c9823-9592-4bb7-9967-9415b8063cd8.png">
+
+## description
+```bash
+요청 응답 주기
+
 ```
