@@ -1,3 +1,10 @@
+
+## install
+```bash
+npm install @nestjs/common@7.6.17 @nestjs/core@7.6.17 @nestjs/platform-express@7.6.17 reflect-metadata@0.1.13 typescript@4.3.2
+    
+```
+
 ## script
 ```bash
 In between the last video and this one, I opened up my code editor inside my scratch project directory so I can see that I've got my packages on file, which we just generated, and then all my dependencies  are inside that node modules directory.
@@ -117,4 +124,20 @@ So it's super important for us to understand those two settings.
 All right, so that's step number two.
 
 Let's take one more pause right here and then go through step number three and four in just a moment.
+```
+
+
+## description
+```bash
+https://github.com/aw-birdgang/nestjs-lecture/issues/1#issue-1475664820
+
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2017",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  }
+}
+
 ```
