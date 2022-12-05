@@ -129,7 +129,7 @@ Let's take one more pause right here and then go through step number three and f
 
 ## description
 ```bash
-https://github.com/aw-birdgang/nestjs-lecture/issues/1#issue-1475664820
+https://user-images.githubusercontent.com/13144137/205551331-5c051e59-ec1b-44fd-9118-2bf13dd9e195.png
 
 {
   "compilerOptions": {
