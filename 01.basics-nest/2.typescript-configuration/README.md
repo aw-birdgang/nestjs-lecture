@@ -126,8 +126,7 @@ All right, so that's step number two.
 Let's take one more pause right here and then go through step number three and four in just a moment.
 ```
 
-![다운로드]{https://user-images.githubusercontent.com/13144137/205551331-5c051e59-ec1b-44fd-9118-2bf13dd9e195.png}
-
+<img width="639" alt="2-5-1" src="https://user-images.githubusercontent.com/13144137/205551331-5c051e59-ec1b-44fd-9118-2bf13dd9e195.png">
 
 ## description
 ```bash
