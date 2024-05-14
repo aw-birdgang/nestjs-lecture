@@ -1,4 +1,4 @@
-import { CreateCatDto } from '../../dtos/create-cat-dto.dto';
+import { CreateCatDto } from '../../../dtos/create-cat-dto.dto';
 
 export class CreateCatCommand {
   constructor(public readonly createCatDto: CreateCatDto) {}

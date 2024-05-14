@@ -2,7 +2,8 @@
 
 ```bash
 
-CQRS (Command Query Responsibility Segregation) 패턴은 애플리케이션의 읽기(쿼리)와 쓰기(명령)를 분리하는 디자인 패턴입니다. Nest.js에서 이 패턴을 사용하면 다음과 같은 장점이 있습니다:
+CQRS (Command Query Responsibility Segregation) 패턴은 애플리케이션의 읽기(쿼리)와 쓰기(명령)를 분리하는 디자인 패턴입니다. 
+Nest.js에서 이 패턴을 사용하면 다음과 같은 장점이 있습니다:
 
 CQRS 사용 시 장점
 성능 최적화: 읽기와 쓰기 작업을 분리함으로써 각 작업을 최적화할 수 있습니다. 예를 들어, 읽기 전용 데이터베이스와 쓰기 전용 데이터베이스를 별도로 운영하여 부하를 분산시킬 수 있습니다.
