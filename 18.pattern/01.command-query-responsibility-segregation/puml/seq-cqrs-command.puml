@@ -1,0 +1,20 @@
+@startuml
+actor Client
+entity "Command Bus" as CB
+entity "KillDragonHandler" as KDHandler
+database "HeroRepository" as HRepo
+entity "Hero Model" as Hero
+entity "Event Bus" as EB
+entity "HeroKilledDragonHandler" as HKDHandler
+
+Client -> CB : KillDragonCommand(heroId, dragonId)
+CB -> KDHandler : execute(command)
+KDHandler -> HRepo : findOneById(heroId)
+HRepo -> KDHandler : return hero
+KDHandler -> Hero : killEnemy(dragonId)
+Hero -> Hero : apply(new HeroKilledDragonEvent)
+Hero -> EB : HeroKilledDragonEvent
+EB -> HKDHandler : handle(event)
+HKDHandler -> Hero : process event
+
+@enduml

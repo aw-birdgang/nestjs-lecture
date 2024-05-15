@@ -1,0 +1,20 @@
+@startuml
+skinparam rectangle {
+  BackgroundColor SkyBlue
+  BorderColor Black
+}
+
+' Components
+entity "Query Bus" as QB
+entity "GetHeroesHandler" as GHH
+database "HeroRepository" as HR
+entity "Hero Model" as HM
+
+' Flows
+QB -> GHH : GetHeroesQuery
+GHH -> HR : findAll()
+HR -> HM : returns [Hero, Hero1, Hero2]
+HM -> GHH : list of Hero
+GHH -> QB : returns result
+
+@enduml

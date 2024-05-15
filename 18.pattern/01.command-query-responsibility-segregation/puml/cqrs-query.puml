@@ -1,0 +1,26 @@
+@startuml
+skinparam rectangle {
+  BackgroundColor Wheat
+  BorderColor Black
+}
+
+' Command Handlers
+rectangle "Query Module" {
+  [GetHeroesQuery] as GHC
+  [GetHeroesHandler] as GHHandler
+
+  GHC -down-> GHHandler : executes
+}
+
+
+' Models and Repositories
+rectangle "Domain Model" {
+  [Hero] as HeroModel
+  [HeroRepository] as HRepo
+
+  GHHandler -> HeroModel : read
+  HRepo ..> HeroModel : instantiates
+}
+
+
+@enduml

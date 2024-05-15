@@ -1,0 +1,35 @@
+@startuml
+skinparam rectangle {
+  BackgroundColor Wheat
+  BorderColor Black
+}
+
+' Command Handlers
+rectangle "Command Module" {
+  [KillDragonCommand] as KDC
+  [KillDragonHandler] as KDHandler
+
+  KDC -down-> KDHandler : executes
+}
+
+' Event Handlers
+rectangle "Event Module" {
+  [HeroKilledDragonEvent] as HKDEvent
+  [HeroKilledDragonHandler] as HKDHandler
+
+  HKDEvent -down-> HKDHandler : handles
+}
+
+
+' Models and Repositories
+rectangle "Domain Model" {
+  [Hero] as HeroModel
+  [HeroRepository] as HRepo
+
+  KDHandler -> HeroModel : modifies
+  HRepo ..> HeroModel : instantiates
+}
+
+HeroModel -> HKDEvent : triggers
+
+@enduml

@@ -1,0 +1,61 @@
+@startuml
+skinparam rectangle {
+  BackgroundColor Wheat
+  BorderColor Black
+}
+
+package "Commands" {
+  [CreateDragonCommand]
+  [KillDragonCommand]
+  [DropAncientItemCommand]
+}
+
+package "Command Handlers" {
+  [KillDragonHandler]
+  [DropAncientItemHandler]
+}
+
+package "Events" {
+  [HeroFoundItemEvent]
+  [HeroKilledDragonEvent]
+}
+
+package "Event Handlers" {
+  [HeroFoundItemHandler]
+  [HeroKilledDragonHandler]
+}
+
+package "Queries" {
+  [GetHeroesQuery]
+}
+
+package "Query Handlers" {
+  [GetHeroesHandler]
+}
+
+package "Models" {
+  [Hero]
+}
+
+package "Repositories" {
+  [HeroRepository]
+}
+
+[HeroRepository] ..> [Hero] : instantiates
+
+[CreateDragonCommand] ..> [KillDragonHandler]
+[KillDragonCommand] ..> [KillDragonHandler]
+[DropAncientItemCommand] ..> [DropAncientItemHandler]
+
+[HeroKilledDragonEvent] ..> [HeroKilledDragonHandler]
+[HeroFoundItemEvent] ..> [HeroFoundItemHandler]
+
+[GetHeroesQuery] ..> [GetHeroesHandler]
+
+[KillDragonHandler] --> [Hero] : modifies
+[DropAncientItemHandler] --> [Hero] : modifies
+
+[Hero] ..> [HeroKilledDragonEvent] : generates
+[Hero] ..> [HeroFoundItemEvent] : generates
+
+@enduml
